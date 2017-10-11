@@ -2,15 +2,17 @@
 .DS_Store
 .jekyll-metadata
 _config.local.yml
+_config.version.yml
 bulma-test.sass
 bulma-website-local.sass
 css/bulma-test.css
+css/bulma-docs.css.map
+PUBLISHING.md
 npm-debug.log
 
 # Folders
 .sass-cache
-/_sass
 /bulma
-/fontawesome
+/icons
 /styles/node_modules
 _site
