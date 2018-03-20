@@ -76,10 +76,42 @@ doc-subtab: start
         Font Awesome icons
       </div>
       <div class="message-body">
-        <p>If you want to use icons with Bulma, don't forget to include <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>:</p>
-        {% highlight html %}<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">{% endhighlight %}
+        <p>If you want to use icons with Bulma, don't forget to include <a href="https://fontawesome.com">Font Awesome 5</a>:</p>
+        {% highlight html %}<script defer src="{{ site.data.icons.fontawesome5 }}"></script>{% endhighlight %}
       </div>
     </div>
+
+    {% include anchor.html name="Code requirements" %}
+
+    <div class="content">
+      <p>
+        For Bulma to work correctly, you need to make your webpage <strong>responsive</strong>.
+      </p>
+    </div>
+
+    <article class="media is-large">
+      <div class="media-left">
+        <p class="title is-5">1</p>
+      </div>
+      <div class="media-content">
+        <p class="title is-5">
+          Use the <strong>HTML5 doctype</strong>
+        </p>
+        {% highlight html %}<!DOCTYPE html>{% endhighlight %}
+      </div>
+    </article>
+
+    <article class="media is-large">
+      <div class="media-left">
+        <p class="title is-5">2</p>
+      </div>
+      <div class="media-content">
+        <p class="title is-5">
+          Add the responsive <strong>viewport</strong> meta tag
+        </p>
+        {% highlight html %}<meta name="viewport" content="width=device-width, initial-scale=1">{% endhighlight %}
+      </div>
+    </article>
 
     {% include anchor.html name="Starter template" %}
 
@@ -91,6 +123,17 @@ doc-subtab: start
 
     <div class="bd-example highlight-full">
       {% highlight html %}{% include getting-started.html %}{% endhighlight %}
+    </div>
+
+    {% include anchor.html name="bulma-start" %}
+
+    <div class="content">
+      <p>
+        <code><a href="/bulma-start/">bulma-start</a></code> is a tiny npm package that includes the <code>npm</code> dependencies you need to build your own website with Bulma.
+      </p>
+      <p>
+        <a class="button is-link" href="/bulma-start/">Check it out</a>
+      </p>
     </div>
 
   </div>

@@ -1,46 +1,8 @@
 ---
+title: Panel
 layout: documentation
 doc-tab: components
 doc-subtab: panel
-variables:
-- name: $panel-item-border
-  value: 1px solid $border
-- name: $panel-heading-background-color
-  value: $background
-- name: $panel-heading-color
-  value: $text-strong
-- name: $panel-heading-line-height
-  value: 1.25
-- name: $panel-heading-padding
-  value: 0.5em 0.75em
-- name: $panel-heading-radius
-  value: $radius
-- name: $panel-heading-size
-  value: 1.25em
-- name: $panel-heading-weight
-  value: $weight-light
-- name: $panel-tab-border-bottom
-  value: 1px solid $border
-- name: $panel-tab-active-border-bottom-color
-  value: $link-active-border
-- name: $panel-tab-active-color
-  value: $link-active
-- name: $panel-list-item-color
-  value: $text
-- name: $panel-list-item-hover-color
-  value: $link
-- name: $panel-block-color
-  value: $text-strong
-- name: $panel-block-hover-background-color
-  value: $background
-- name: $panel-block-active-border-left-color
-  value: $link
-- name: $panel-block-active-color
-  value: $link-active
-- name: $panel-block-active-icon-color
-  value: $link
-- name: $panel-icon-color
-  value: $text-light
 ---
 
 {% capture panel_example %}
@@ -52,7 +14,7 @@ variables:
     <p class="control has-icons-left">
       <input class="input is-small" type="text" placeholder="search">
       <span class="icon is-small is-left">
-        <i class="fa fa-search"></i>
+        <i class="fas fa-search"></i>
       </span>
     </p>
   </div>
@@ -65,37 +27,37 @@ variables:
   </p>
   <a class="panel-block is-active">
     <span class="panel-icon">
-      <i class="fa fa-book"></i>
+      <i class="fas fa-book"></i>
     </span>
     bulma
   </a>
   <a class="panel-block">
     <span class="panel-icon">
-      <i class="fa fa-book"></i>
+      <i class="fas fa-book"></i>
     </span>
     marksheet
   </a>
   <a class="panel-block">
     <span class="panel-icon">
-      <i class="fa fa-book"></i>
+      <i class="fas fa-book"></i>
     </span>
     minireset.css
   </a>
   <a class="panel-block">
     <span class="panel-icon">
-      <i class="fa fa-book"></i>
+      <i class="fas fa-book"></i>
     </span>
     jgthms.github.io
   </a>
   <a class="panel-block">
     <span class="panel-icon">
-      <i class="fa fa-code-fork"></i>
+      <i class="fas fa-code-branch"></i>
     </span>
     daniellowtw/infboard
   </a>
   <a class="panel-block">
     <span class="panel-icon">
-      <i class="fa fa-code-fork"></i>
+      <i class="fas fa-code-branch"></i>
     </span>
     mojs
   </a>
@@ -154,7 +116,7 @@ variables:
 
     {% include snippet.html content=panel_example size="one-third" %}
 
-    {% include variables.html %}
+    {% include variables.html type='component' %}
 
   </div>
 </section>

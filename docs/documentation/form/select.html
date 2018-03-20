@@ -86,6 +86,15 @@ doc-subtab: select
 </div>
 {% endcapture %}
 
+{% capture rounded_example %}
+<div class="select is-rounded">
+  <select>
+    <option>Rounded dropdown</option>
+    <option>With options</option>
+  </select>
+</div>
+{% endcapture %}
+
 {% capture sizes_example %}
 <div class="field">
   <div class="control">
@@ -195,7 +204,7 @@ doc-subtab: select
       </select>
     </div>
     <div class="icon is-small is-left">
-      <i class="fa fa-globe"></i>
+      <i class="fas fa-globe"></i>
     </div>
   </div>
 </div>
@@ -211,7 +220,7 @@ doc-subtab: select
     </select>
   </div>
   <span class="icon is-small is-left">
-    <i class="fa fa-envelope"></i>
+    <i class="fas fa-globe"></i>
   </span>
 </div>
 {% endcapture %}
@@ -226,7 +235,7 @@ doc-subtab: select
     </select>
   </div>
   <span class="icon is-left">
-    <i class="fa fa-envelope"></i>
+    <i class="fas fa-globe"></i>
   </span>
 </div>
 {% endcapture %}
@@ -241,7 +250,7 @@ doc-subtab: select
     </select>
   </div>
   <span class="icon is-medium is-left">
-    <i class="fa fa-envelope"></i>
+    <i class="fas fa-globe"></i>
   </span>
 </div>
 {% endcapture %}
@@ -256,7 +265,7 @@ doc-subtab: select
     </select>
   </div>
   <span class="icon is-large is-left">
-    <i class="fa fa-envelope"></i>
+    <i class="fas fa-globe"></i>
   </span>
 </div>
 {% endcapture %}
@@ -296,25 +305,23 @@ doc-subtab: select
       </div>
     </div>
 
-    {% if site.vernum >= 44 %}
-      <hr>
+    <hr>
 
-      <h3 class="title">Multiple select</h3>
+    <h3 class="title">Multiple select</h3>
 
-      <div class="columns">
-        <div class="column is-half">
-          <div class="content">
-            <p>
-              You can style a <strong>multiple select</strong> dropdown, by using the <code>is-multiple</code> modifier, and by using the <code>multiple</code> HTML attribute.
-            </p>
-          </div>
-          {{select_multiple_example}}
+    <div class="columns">
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            You can style a <strong>multiple select</strong> dropdown, by using the <code>is-multiple</code> modifier, and by using the <code>multiple</code> HTML attribute.
+          </p>
         </div>
-        <div class="column is-half highlight-full">
-          {% highlight html %}{{select_multiple_example}}{% endhighlight %}
-        </div>
+        {{select_multiple_example}}
       </div>
-    {% endif %}
+      <div class="column is-half highlight-full">
+        {% highlight html %}{{select_multiple_example}}{% endhighlight %}
+      </div>
+    </div>
 
     {% include anchor.html name="Colors" %}
 
@@ -324,6 +331,19 @@ doc-subtab: select
       </div>
       <div class="column is-half highlight-full">
         {% highlight html %}{{colors_example}}{% endhighlight %}
+      </div>
+    </div>
+
+    {% include anchor.html name="Styles" %}
+
+    {% include elements/new-tag.html version="0.6.2" %}
+
+    <div class="columns">
+      <div class="column is-half">
+        {{ rounded_example }}
+      </div>
+      <div class="column is-half">
+        {% highlight html %}{{ rounded_example }}{% endhighlight %}
       </div>
     </div>
 
